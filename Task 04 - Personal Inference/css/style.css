@@ -1,0 +1,28 @@
+body {
+	background-color: #F0F0F0;
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif, arial;
+	font-size: 3em;
+}
+
+div {position: relative;padding-top: 80px;}
+
+span {padding: 10px;border: 2px solid #555;}
+
+img {
+	position: absolute;
+	top: 0;
+	left: calc(50% - 25px);
+	width: 50px;
+	animation: img 2s infinite linear;
+}
+
+@keyframes img {
+	from {transform: rotate(0deg);}
+	to{transform: rotate(359deg);}
+}

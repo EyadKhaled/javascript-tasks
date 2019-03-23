@@ -1,0 +1,39 @@
+body {
+	background-color: #F0F0F0;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+div {
+	text-align: center;
+	margin-top: 40px;
+}
+
+span {
+	color: #008CBA;
+}
+
+button {
+	font-size: 20px;
+	margin: 40px auto 40px;
+	display: block;
+	background: none;
+	border: 2px solid #555;
+	padding: 10px;
+	cursor: pointer;
+}
+
+button:hover {background-color: #CCC;}
+
+input {
+	font-size: 20px;
+	padding: 10px;
+	margin: 40px auto 20px;
+	display: block;
+}
+
+#error {color: #F44336;}

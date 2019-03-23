@@ -1,0 +1,96 @@
+body {
+	background-color: #F0F0F0;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+/* Start Game */
+
+section {
+	width: 400px;
+	background-color: #FFF;
+	font-family: sans-serif, arial;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+section h1 {
+	text-align: center;
+	background: -webkit-linear-gradient(right, #4CAF50 0%, #008CBA 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+section p {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: #008CBA;
+}
+
+section hr {
+	background-color: #555;
+	margin: 10px 10px 15px;
+}
+
+section input {
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	font-size: 18px;
+	border: 1px solid #555;
+}
+
+section button {
+	margin: 20px 0px 10px;
+	background: none;
+	border: 2px solid #555;
+	color: #555;
+	font-size: 20px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+section button:hover {background-color: #CCC;}
+
+section button:focus {outline: none;}
+
+section div:first-of-type,
+section div:nth-of-type(2) {
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 20px;
+
+}
+
+section div:last-of-type {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 20px;
+}
+
+section div #cheat,
+section div #again {
+	color: #008CBA;
+	cursor: pointer;
+}
+
+section div #cheat:hover,
+section div #again:hover {text-decoration: underline;}
+
+section div #again {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#cheatMain {text-align: center;}
+
+/* End Game */

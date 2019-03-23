@@ -1,0 +1,43 @@
+body {
+	background-color: #F0F0F0;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif, arial;
+}
+
+.container {
+	width: 400px;
+	background-color: #FAFAFA;
+}
+
+.container h1 {
+	text-align: center;
+}
+
+.container section {
+	font-size: 22px;
+	padding: 10px;
+	margin: 10px;
+	background-color: #F0F0F0;
+	cursor: pointer;
+}
+
+.container section:hover {
+	background-color: #CCC;
+    color: #FAFAFA;
+}
+
+.container hr {
+	background-color: #555;
+	margin: 20px 10px;
+}
+
+.container div {
+	text-align: center;
+	font-size: 25px;
+	margin: 20px;
+}
