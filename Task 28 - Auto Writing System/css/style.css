@@ -1,0 +1,16 @@
+body {
+	background-color: #BD3D3A;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: tahoma,arial;
+	color: #FAFAFA;
+	font-size: 2em;
+}
+
+h2::after {content: ' _'}
+
+i {color: #F44336}

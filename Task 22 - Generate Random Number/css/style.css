@@ -1,0 +1,43 @@
+body {
+	background-color: #F0F0F0;
+	background: linear-gradient(to right, #008CBA 0%, #4CAF50 100%);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+section {
+	width: 400px;
+	background-color: #555;
+	text-align: center;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+section div {
+	margin: 10px;
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #F0F0F0;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+	font-size: 1.5em;
+	font-family: sans-serif,arial;
+}
+
+section button {
+	padding: 5px 10px;
+	margin: 10px;
+	background: none;
+	border: 2px solid #FFF;
+	font-size: 1.3em;
+	color: #FFF;
+	transition: .5s;
+	cursor: pointer;
+}
+
+section button:hover {background-color: #CCC;color: #222}
+section button:focus {outline: none}

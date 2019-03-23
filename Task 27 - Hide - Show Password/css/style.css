@@ -1,0 +1,42 @@
+body {
+	background-color: #F0F0F0;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section {
+	width: 400px;
+	height: 250px;
+	background-color: #FFF;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+	text-align: center;
+	font-family: sans-serif,arial;
+	transform: scale(1.1);
+}
+
+section h2 {margin: 40px 0}
+
+section form {position: relative}
+
+section input {
+	background: none;
+	border: none;
+	border-bottom: 2px solid #555;
+	padding: 5px;
+	font-size: 18px;
+	display: block;
+	margin: 0 auto;
+}
+
+section input:focus {outline: none}
+
+section i {
+	position: absolute;
+	bottom: 8px;
+	left: calc(100% - 110px);
+	cursor: pointer;
+}

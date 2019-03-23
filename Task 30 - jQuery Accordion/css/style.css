@@ -1,0 +1,54 @@
+body {
+	background-color: #F0F0F0;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section {
+	width: 500px;
+	background-color: #fda085;
+	border: 2px solid #777;
+	opacity: 0.9;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+	padding: 10px;
+	font-family: tahoma,sans-serif,arial;
+	text-align: center;
+}
+
+section h2 {
+	background-color: #FFF;
+	border-radius: 25px;
+	width: 60%;
+	font-size: 2em;
+	margin: 20px auto 40px;
+}
+
+section .Accordion-Cont {margin: 20px 0}
+
+section .showenBox, section .hiddenBox {
+	padding: 10px;
+	margin: 0px auto;
+}
+
+section .showenBox {
+	width: calc(100% - 20px);
+	background-color: #676767;
+	color: #DDD;
+	font-size: 1.6em;
+	cursor: pointer;
+	transition: .5s;
+}
+
+section .hiddenBox {
+	width: 95%;
+	background-color: #777;
+	color: #FFF;
+	display: none;
+	font-size: 1.1em;
+}
+
+section .showenBox:hover {color: #008CBA;background-color: #F0F0F0}

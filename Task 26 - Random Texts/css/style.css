@@ -1,0 +1,88 @@
+/* Start Global */
+
+body {
+	background-color: #F0F0F0;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section {
+	width: 350px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+
+/* End Global */
+/* Start Top Area */
+
+section .mainTop {
+	height: 140px;
+	background-color: #343148;
+	position: relative;
+	text-align: center;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+section .mainTop div {overflow: hidden}
+
+section .mainTop div h2 {
+	color: #FAFAFA;
+	padding-top: 10px;
+	font-family: tahoma,sans-serif,arial;
+	transition: 1s;
+	animation: h2Animate 4s infinite linear;
+}
+
+section .mainTop img {
+	width: 100px;
+	position: absolute;
+	bottom: -40px;
+	left: calc(50% - 50px);
+	border-radius: 50%;
+	z-index: 2;
+}
+
+/* End Top Area */
+/* Start Bottom Area */
+
+section .mainBottom {
+	height: 340px;
+	background-color: #EAE6DA;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+section .mainBottom .box {
+	position: absolute;
+	width: 40px;
+	height: 150px;
+	background-color: #008CBA;
+	transform: rotate(40deg);
+	top: -30px;
+}
+
+section .mainBottom .flower {
+	width: 100px;
+	padding: 4em 0 5px;
+	animation: flowerAnimate 2s infinite ease-in-out;
+}
+
+/* End Bottom Area */
+
+@keyframes flowerAnimate {
+	0% {transform: scale(1)}
+	50% {transform: scale(1.1)}
+	100% {transform: scale(1)}
+}
+
+@keyframes h2Animate {
+	0% {transform: rotate(0deg)}
+	33% {transform: rotate(5deg) scale(1.1)}
+	66% {transform: rotate(-5deg) scale(1.1)}
+	100% {transform: rotate(0deg)}
+}

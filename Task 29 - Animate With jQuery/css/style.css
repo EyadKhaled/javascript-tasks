@@ -1,0 +1,32 @@
+body {
+	background-color: #F0F0F0;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+#sec1, #sec2 {
+	width: 400px;
+	height: 40px;
+	text-align: center;
+	padding: 10px;
+	background-color: #FFF;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+	font-family: sans-serif,tahoma;
+	overflow: hidden;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: -50%;
+	left: 50%;
+}
+
+#sec2 {top: 50%;left: -250%;height: 140px}
+
+h2 {margin: 2em}
+
+img {
+	width: 40px;
+	position: absolute;
+	bottom: 10px;
+	transform: translate(-50%, 0);
+}

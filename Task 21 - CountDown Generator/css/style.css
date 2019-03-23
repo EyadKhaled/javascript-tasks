@@ -1,0 +1,80 @@
+body {
+	background-color: #F0F0F0;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+@font-face {font-family: font1;src: url("../fonts/Hansief.otf");}
+@font-face {font-family: font2;src: url("../fonts/MrGrieves-Regular.otf");}
+@font-face {font-family: font3;src: url("../fonts/Rustico-Regular.otf");}
+@font-face {font-family: font4;src: url("../fonts/Lora-Bold.ttf");}
+
+/* Start Section #1 */
+
+.generating, .mainTimer {
+	width: 400px;
+	font-family: sans-serif,arial;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+	background-color: #FFF;
+	padding: 10px;
+}
+
+.generating h2, .generating input {text-align: center;}
+
+.generating hr {margin-bottom: 20px;}
+
+.generating article {
+	padding: 10px;
+	height: 35px;
+}
+
+.generating label {font-size: 1.3em;line-height: 35px}
+
+.generating input {
+	float: right;
+	padding: 5px;
+	font-size: 18px;
+	border: none;
+	border-bottom: 2px solid #222;
+}
+
+.generating input:focus {outline: none;}
+
+.generating div {text-align: center;}
+
+.generating button {
+	margin: 20px 0 0;
+	font-size: 20px;
+	padding: 5px 10px;
+	background: none;
+	border: 2px solid #555;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.generating button:hover {background-color: #CCC;}
+
+.generating p {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/* End Section #1 */
+/* Start Section #2 */
+
+.mainTimer {display: none;}
+
+.mainTimer #mainDiv {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding: 15px;
+}
+
+/* End Section #2 */

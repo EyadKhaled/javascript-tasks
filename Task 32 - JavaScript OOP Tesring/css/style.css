@@ -1,0 +1,270 @@
+/* Start Global */
+
+* {
+	font-family: sans-serif,tahoma,arial;	
+}
+
+body {
+	background-color: #F0F0F0;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/* End Blobal */
+
+/* Start Control Section */
+
+section.control {
+	width: 400px;
+	background-color: #FFF;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+	padding: 20px 10px;
+	text-align: center;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+section.control h1 {
+	color: #555;
+	padding-bottom: 5px;
+	position: relative;
+}
+
+section.control h1::after {
+	content: '';
+	position: absolute;
+	width: 6rem;
+	height: 3px;
+	background-color: #008CBA;
+	bottom: 0;
+	left: 20%;
+	animation: h1Moving 4s ease-in-out infinite;
+}
+
+@keyframes h1Moving {
+	0% {left: 15%}
+	25% {width: 4rem}
+	50% {left: 60%;width: 6rem}
+	75% {width: 4rem}
+	100% {left: 15%}
+}
+
+section.control input {
+	width: 44%;
+	padding: 2%;
+	margin: 0 1% 2% 0;
+	border: none;
+	border-bottom: 2px solid #555;
+	text-align: center;
+}
+
+section.control > span {position: relative;display: inline}
+
+section.control > span > span {
+	position: absolute;
+	top: 0;
+	right: 15px;
+}
+
+section.control input:focus {outline: none}
+
+section.control button {
+	background: none;
+	border: 2px solid #555;
+	color: #555;
+	margin: 20px 10px;
+	padding: 5px 10px;
+	font-size: 20px;
+	transition: .5s;
+	cursor: pointer;
+}
+
+section.control button:hover {background: #CCC;}
+
+section.control #console {
+	background: #FAFAFA;
+	border: 1px solid #000;
+	display: flex;
+	align-items: center;
+	padding: 5px 10px;
+}
+
+section.control #ex {color: #2B87D3;cursor: pointer}
+
+section.control #ex:hover {text-decoration: underline}
+
+footer {
+	margin: 20px 0;
+}
+
+/* End Control Section */
+
+/* Start Lists Section */
+
+section.lists {
+	background-color: #FAFAFA;
+	border: 5px solid #CCC;
+	width: 500px;
+	height: 600px;
+	margin-left: 20px;
+	padding: 0 10px;
+	overflow: scroll;
+}
+
+@media (max-width: 940px) {
+	section.lists {margin: 0;}
+}
+
+section.lists h2 {
+	text-align: center;
+	color: #444;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 2rem;
+}
+
+section.lists .fruit {
+	background-color: #FFF;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+	padding: 10px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+section.lists .fruit .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #FFF;
+	font-weight: bold;
+	font-size: 1.5em;
+	font-family: tahoma;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	z-index: 10;
+}
+
+section.lists .fruit .overlay .fa-heart-broken {color: #F44336}
+
+section.lists .fruit > i {
+	color: #F44336;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.item-name,
+.item-settings,
+.item-info {
+	float: left;
+	width: 50%;
+}
+
+section.lists .fruit .item-name i {color: #2B87D3;padding-right: 5px;}
+
+section.lists .fruit .item-name span {
+	font-size: 20px;
+}
+
+section.lists .fruit .item-settings {
+	text-align: right;
+	padding-top: 3px;
+}
+
+section.lists .fruit .item-settings i {cursor: pointer}
+
+section.lists .fruit .item-settings .fa-times:hover {color: #F44336;}
+
+section.lists .fruit .item-info {
+	text-align: left;
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	padding-top: 30px;
+	position: relative;
+}
+
+section.lists .fruit .item-info .color-box {
+	width: 30px;
+	height: 30px;
+	border: 2px solid #CCC;
+	margin-right: 10px;
+}
+
+section.lists .fruit .item-info span {
+	position: absolute;
+	bottom: 0;
+	font-weight: bold;
+}
+
+section.lists .fruit .item-info span:first-of-type {left: 40px;}
+
+section.lists .fruit .item-info span:last-of-type {right: 5px;}
+
+/* End Lists Section */
+
+/* Start Footer */
+
+footer {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px 0 10px;
+}
+
+footer img {
+	width: 40px;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+footer > span {
+	position: absolute;
+	font-family: tahoma;
+	font-weight: bold;
+	color: #4CAF50;
+	font-size: 2em;
+	opacity: 0;
+	transition: .5s;	
+}
+
+footer > span span {color: #f75d35;}
+
+footer i {
+	color: #F44336;
+	font-size: 8px;
+	position: absolute;
+	left: 50px;
+	top: 2px;
+	transform: rotate(-10deg);
+}
+
+footer:hover span {
+	opacity: 1;
+	transition: 2s;
+}
+
+footer:hover i {
+	animation: heart 2s infinite ease-in-out;
+}
+
+@keyframes heart {
+	0% {transform: rotate(-10deg) scale(1)}
+	50% {transform: rotate(-10deg) scale(1.1)}
+	100% {transform: rotate(-10deg) scale(1)}
+}
+
+/* End Footer */
