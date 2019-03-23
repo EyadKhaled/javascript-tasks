@@ -1,0 +1,263 @@
+header {
+	height: 600px;
+	background-image: url("../images/background2.jpeg");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header div {
+	color: #FFF;
+	font-family: sans-serif,arial;
+	text-align: center;
+	font-weight: bold;
+}
+
+header div h1 {
+	padding: 10px;
+	font-size: 2.5em;
+	border-top: 5px solid #FFF;
+	border-bottom: 5px solid #FFF;
+	text-transform: uppercase;
+	width: 400px;
+	margin: 30px auto;
+}
+
+header div button {
+	background: none;
+	padding: 10px 20px;
+	border: 2px solid #FFF;
+	color: #FFF;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all .5s ease-in-out;
+}
+
+header div button:hover {background-color: #CCC;color: #000;}
+
+nav {
+	background-color: #252e30;
+	overflow: hidden;
+	padding: 10px;
+}
+
+nav .logo {
+	float: left;
+	color: #FFF;
+	font-size: 25px;
+	line-height: 45px;
+	margin-left: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+nav .logo .logos {color: #4CAF50;}
+
+nav ul {
+	list-style-type: none;
+	float: right;
+}
+
+nav ul li {
+	display: inline-block;
+	color: #FFF;
+	font-size: 16px;
+	padding-left: 20px;
+	cursor: pointer;
+	transition: all .5s ease-in-out;
+}
+
+nav ul li:hover {color: #4CAF50;transform: scale(1.1, 1.1);}
+
+section div h1 {
+	color: #008CBA;
+	font-size: 28px;
+	margin: 40px 0 60px 30px;
+	position: relative;
+	padding-bottom: 5px;
+}
+
+section div div {
+	display: inline-block;
+	width: 200px;
+	margin-left: 70px;
+	text-align: center;
+}
+
+section div div i {font-size: 25px;}
+.fa-globe-asia {color: #4CAF50;}
+.fa-suitcase {color: #555;}
+.fa-pencil-alt {color: #2B87D3;}
+.fa-layer-group {color: #2ecc71;}
+
+section div div p {
+	color: #555;
+	letter-spacing: .4px;
+}
+
+.skills {
+	height: 400px;
+	background-color: #EEE;
+	margin-top: 80px;
+	box-sizing: border-box;
+}
+
+.skills-left {
+	padding-left: 30px;
+	width: 50%;
+	float: left;
+}
+
+.skills-left h1 {
+	color: #4CAF50;
+	font-size: 28px;
+	padding: 40px 0 5px 0px;
+	position: relative;
+}
+
+.skills-left p {
+	margin-top: 40px;
+	color: #555;
+	letter-spacing: .4px;
+}
+
+.skills-left button {
+	background: none;
+	padding: 10px;
+	border: 2px solid #4CAF50;
+	color: #4CAF50;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 20px 0px 0px 3em;
+	text-transform: uppercase;
+	transition: all .5s ease-in-out;
+}
+
+.skills-left button:hover {background-color: #4CAF50;color: #FFF;}
+
+.skills-left button:focus {outline: none;}
+
+.skills-right {
+	width: 40%;
+	float: left;
+	padding: 50px 0px 0px 60px;
+}
+
+.skills-right p {
+	color: #333;
+	letter-spacing: .5px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.skills-right .progress-par {
+	width: 100%;
+	height: 25px;
+	background-color: #FAFAFA;
+	margin-bottom: 15px;
+}
+
+.skills-right .progress-par .progress-child {
+	height: 100%;
+	background-color: #2ecc71;
+	color: #FFF;
+	text-align: right;
+	line-height: 25px;
+	font-weight: bold;
+}
+
+.contact-me {background-color: #252e30;overflow: hidden;}
+
+.contact-me .container {display: flex;}
+
+.contact-me .contact-left {width: 50%;padding: 45px 0px 0px 40px;}
+
+.contact-me .contact-left h2 {color: #FFF;}
+
+.contact-me .contact-left p {color: #546e71;line-height: 1.6;}
+
+.contact-me .contact-left span {
+	color: #546e71;
+	display: block;
+	padding-bottom: 10px;
+}
+
+.contact-me .contact-left span:nth-last-of-type(3) {padding-bottom: 20px;}
+
+.contact-me .contact-left span strong {color: #d1d6da;}
+
+.contact-me .contact-right {width: 42%;padding: 75px 0px 0px 45px;}
+
+.contact-me .contact-right label {
+	color: #d1d6da;
+	display: block;
+	padding-bottom: 10px;
+}
+
+.contact-me .contact-right input {
+  width: 100%;
+  background-color: #4b5557;
+  color: #F0F0F0;
+  height: 40px;
+  border: none;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.contact-me .contact-right textarea {
+  width: 100%;
+  background-color: #4b5557;
+  color: #F0F0F0;
+  border: none;
+  height: 200px;
+  resize: none;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-me .contact-right button {
+  margin-bottom: 50px;
+  padding: 10px 30px;
+  font-size: 18px;
+  background: #191f21;
+  color: #FFF;
+  border: 1px solid #191f21;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  font-weight: bold;
+}
+
+.contact-me .contact-right button:hover {background-color: #EEE;color: #555;}
+
+footer {
+  background-color: #191f21;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+footer p {color: #506e71;float: left;}
+
+footer .fab {
+  color: #191f21;
+  background-color: #6a6e71;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  float: right;
+  line-height: 24px;
+  margin: 15px 5px 0px 0px;
+}
+
+footer .fas {
+	color: #F44336;
+	line-height: 50px;
+	font-size: 18px;
+}
+
+footer .fab:hover {color: #FFF;}

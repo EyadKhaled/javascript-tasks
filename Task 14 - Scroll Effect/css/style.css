@@ -1,0 +1,21 @@
+body {
+	background-color: #F0F0F0;
+	height: 4000px;
+}
+
+div {
+	height: 800px;
+	background-color: #008CBA;
+	margin: 20px 0px;
+	transition: all .5s linear;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	font-family: sans-serif, arial;
+	color: #FAFAFA;
+}
+
+.change {
+	background-color: #4CAF50;
+}

@@ -1,0 +1,104 @@
+body {
+	background-color: #F0F0F0;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+section:first-of-type {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	border: 3px solid #555;
+	font-family: sans-serif, arial;
+}
+
+h1 {text-align: center;}
+
+p {font-size: 18px;color: #2B87D3;}
+
+p span {color: #4CAF50;}
+
+label {font-family: cursive;}
+
+input {
+	width: 140px;
+	font-size: 18px;
+	background: none;
+	border: none;
+	padding: 5px;
+	position: relative;
+	border-bottom: 2px solid #555;
+}
+
+input:focus {outline: none;}
+
+button {
+	display: block;
+	margin: 10px;
+	background: none;
+	padding: 5px;
+	border: 2px solid #555;
+	color: #555;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+button:focus {outline: none;}
+
+button:hover {background-color: #CCC;}
+
+hr {margin-bottom: 20px;}
+
+div {
+	font-size: 18px;
+	margin-bottom: 20px;
+	background: #CCC;
+	padding: 10px;
+	position: relative;
+}
+
+div::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 6px;
+	top: 0;
+	left: 0;
+	background-color: #008CBA;
+}
+
+div img {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	width: 20px;
+	animation-name: imgOne, imgTwo;
+	animation-duration: 2s, 6s;
+	animation-timing-function: linear, ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+div #result {float: right;}
+
+@keyframes imgOne {
+	from {transform: rotate(0deg);left: 50%;}
+	to {transform: rotate(359deg);left: 20%;}
+}
+
+@keyframes imgTwo {
+	0% {left: 50%;}
+	25% {left: 40%;}
+	50% {left: 55%;}
+	75% {left: 40%;}
+	100% {left: 50%;}
+}
+
+h2 {
+	font-size: 18px;
+	margin: 10px;
+	text-align: center;
+	font-weight: normal;
+}

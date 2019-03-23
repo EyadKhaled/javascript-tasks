@@ -1,0 +1,55 @@
+body {
+	background-color: #F0F0F0;
+	margin: 0;
+	padding: 0;
+	height: 4000px;
+	scroll-behavior: smooth;
+}
+
+#icon1 {
+	padding: 5px;
+	background-color: #222;
+	color: #008CBA;
+	font-size: 2.5em;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	cursor: pointer;
+	border-radius: 25%;
+	transition: .5s;
+	opacity: 0;
+}
+
+#icon1:hover {
+	color: #FAFAFA;
+	transform: rotate(360deg);
+}
+
+section {
+	height: 900px;
+	background-color: #CCC;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+	font-family: sans-serif,arial;
+	margin: 10px;
+}
+
+.down {
+	position: absolute;
+	top: 750px;
+	left: calc(50% - 30px);
+	font-size: 3.5em;
+	animation: animate 1.2s infinite ease-in-out;
+	cursor: pointer;
+}
+
+.down:hover {animation: none}
+
+@keyframes animate {
+	0% {opacity: 1}
+	50% {opacity: 0}
+	100% {opacity: 1}
+}
